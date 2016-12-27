@@ -7298,7 +7298,6 @@ body {
 }
 .top-menu ul li a {
   color: #fff;
-  border-bottom: 1px dotted #fff;
 }
 .top-menu ul li a:hover {
   cursor: pointer;
@@ -7472,6 +7471,7 @@ body {
   background-size: cover;
   color: #60451d;
   position: relative;
+  min-height: 300px;
 }
 .main-questions__left .border {
   background-color: rgba(96, 69, 29, 0.5);
@@ -7483,6 +7483,7 @@ body {
   background-size: cover;
   color: #fff;
   position: relative;
+  min-height: 300px;
 }
 .main-questions__right .border {
   background-color: rgba(255, 255, 255, 0.5);
@@ -7568,9 +7569,9 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 260px;
   margin: 0 auto;
   width: 100%;
+  padding-bottom: 40px;
 }
 .photo__item {
   width: 25%;
@@ -7709,9 +7710,54 @@ body {
   background-position: left top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 520px;
   margin: 0;
   width: 100%;
+  padding-top: 1px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+.feedbacks__caption {
+  display: table;
+  margin: 15px auto 0;
+  text-transform: uppercase;
+  color: #fff;
+}
+.feedbacks__caption h2 {
+  font-size: 18px;
+  font-family: 'PT Serif';
+  font-weight: 400;
+  text-align: center;
+}
+.feedbacks__wrap-items {
+  width: auto;
+  margin: auto;
+}
+.feedbacks__item {
+  margin: 10px 0;
+}
+.feedbacks__item .feedbacks__item-caption {
+  display: table;
+  margin: 0 auto;
+}
+.feedbacks__item .feedbacks__item-caption h3 {
+  font-size: 13px;
+  font-family: 'PT Serif';
+}
+.feedbacks__item .feedbacks__item-text {
+  font-style: italic;
+  margin: 5px 0 30px;
+}
+.feedbacks__item .feedbacks__item-text p {
+  font-size: 13px;
+  text-align: center;
+}
+.feedbacks__item .feedbacks__item-link {
+  text-align: center;
+}
+.feedbacks__item .feedbacks__item-link a {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 13px;
 }
 footer {
   height: 230px;
@@ -7724,6 +7770,7 @@ footer .footer__left {
 }
 footer .footer__left .logo img {
   width: 100px;
+  height: 70px;
 }
 footer .footer__right {
   display: table;
@@ -7752,8 +7799,6 @@ footer .btn-bottom {
 }
 footer .btn-bottom .enroll {
   width: 100%;
-  display: block;
-  padding: 7px 72px;
 }
 footer .politics {
   display: table;

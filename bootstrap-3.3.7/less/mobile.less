@@ -33,7 +33,6 @@ body{
             
             a{
                 color: #fff; 
-                border-bottom: 1px dotted #fff;
             }
             a:hover{
                 cursor: pointer;
@@ -224,6 +223,7 @@ body{
     background-size: cover;
     color: #60451d;
     position: relative;
+    min-height: 300px;
 
     .border{
         background-color: rgba(96, 69, 29, 0.5);
@@ -236,6 +236,7 @@ body{
     background-size: cover;
     color: #fff;
     position: relative;
+    min-height: 300px;
 
     .border{
         background-color: rgba(255, 255, 255, 0.5);
@@ -322,9 +323,9 @@ body{
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 260px;
 	margin: 0 auto; 
     width: 100%; 
+    padding-bottom: 40px;
 }
 .photo__item{
     width: 25%;
@@ -473,9 +474,56 @@ body{
     background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 520px;
 	margin: 0; 
     width: 100%; 
+    padding-top: 1px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+.feedbacks__caption{
+    display: table;
+    margin: 15px auto 0;
+    text-transform: uppercase;
+    color: #fff;
+    h2{
+        font-size: 18px;
+        font-family: 'PT Serif';
+        font-weight: 400;
+        text-align: center;
+    }
+}
+.feedbacks__wrap-items{
+    width: auto;
+    margin: auto;
+}
+.feedbacks__item{
+    margin: 10px 0;
+    .feedbacks__item-caption{
+        display: table;
+        margin: 0 auto;
+        
+        h3{
+            font-size: 13px;
+            font-family: 'PT Serif';
+        }
+    }
+    .feedbacks__item-text{
+        font-style: italic;
+        margin: 5px 0 30px;
+        p{
+            font-size: 13px;
+            text-align: center;
+        }
+    }
+    .feedbacks__item-link{
+        text-align: center;
+
+        a{
+            color: #fff;
+            text-decoration: underline;
+            font-size: 13px;
+        }
+    }
 }
 footer{
     height: 230px;
@@ -488,6 +536,7 @@ footer{
         
         .logo img{
             width: 100px;
+            height: 70px;
         }
         
     }
@@ -520,8 +569,6 @@ footer{
         
         .enroll{
             width: 100%;
-            display: block;
-            padding: 7px 72px;
         }
     }
     
