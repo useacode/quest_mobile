@@ -1,0 +1,536 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+	margin:0;
+	padding:0;
+    font: 400 1em/1.38 'PT Sans';
+}
+.row{
+    margin: 0;
+}
+
+#first{ 	
+    position: relative;
+    background: url(../img/main-screen-mobile.jpg);
+    background-position: left top;
+    background-size: cover;
+    height: 480px;
+}
+.header{
+    padding: 0 40px 0;
+}
+.top-menu{
+    ul{
+        line-height: 45px;
+        display: block;
+        
+        li{
+            float: left;
+            margin: 0 20px 0 0;
+            font-size: 15px;
+            
+            a{
+                color: #fff; 
+                border-bottom: 1px dotted #fff;
+            }
+            a:hover{
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+    }
+    
+    .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+
+    .navbar-toggle{
+        margin-top: 20px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        float: right;
+        left: 80px;
+        z-index: 20;
+    }
+}
+.enroll-wrap{
+    position: absolute;
+    top: 20px;
+    left: 16px;
+}
+.enroll{
+    color: #fff;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 7px 40px;
+    font-style: italic;
+    font-size: 16px;
+    
+    &:hover{
+        color: #000;
+        background-color: #fff;
+    }   
+}
+.main-text{
+    position: absolute;
+    top: 176px;
+    margin: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'PT Serif';
+    color: #fff;
+    
+    h1{
+        font-size: 48px;
+        font-weight: 500;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    h3{
+        position: relative;
+        font-size: 20px;   
+        text-transform: uppercase;
+        margin-top: 10px;  
+        top: -7px;
+        
+        span{
+            display: block;
+            font-size: 20px;
+        }
+    }
+    span{
+        display: block;
+        font-size: 33px;
+    }
+}
+.main-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+    .scroll-cell{
+        width: 100%;
+    }
+    .scroll{
+        display: table;
+        margin: auto;
+        
+        img{
+            display: block;
+            margin: 0 auto 20px;
+            width: 40px;
+        }
+    }
+}
+#second{ 
+	background: url(../img/background2.jpg);
+    background-position: 70% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 610px;
+	margin: 0 auto; 
+    width: 100%; 
+    padding-top: 40px;
+}
+.welcome{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    font-family: 'PT Serif';
+    color: #fff;
+    
+    .welcome__caption{
+        width: 309px;
+        margin: auto;
+        text-align: center;
+        p{
+            text-transform: uppercase;
+            font-size: 19px;      
+        }
+    }
+    .welcome__text{
+        width: 90%;
+        margin: 20px auto;
+        
+        p{
+            font-size: 12px;
+            line-height: 1.5em;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+        }
+    }   
+}
+.icon-block{
+    width: 90%;
+    margin: 50px auto;
+    
+    .left{
+        float: left;
+    }
+    .right{
+        float: right;
+    }
+    
+    img{
+        display: inline-block;
+        margin: 0;
+        width: 50px;  
+    }
+    p{
+        display: table;
+        margin: 20px 0 0;
+        color: #fff;       
+        text-align: center;
+        font-size: 14px;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+    }
+    span{
+        display: table;
+        margin: 20px 10px;
+        color: #fff;       
+        text-align: center;
+        font-size: 14px;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+    }
+}
+#main-questions{
+    height: 600px;
+	margin: 0 auto; 
+    width: 100%; 
+}
+
+.main-questions__img{
+    display: table;
+    margin: 30px auto 0;
+    width: 30px;
+    
+    &:hover{
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+.main-questions__left{
+    background: url(../img/gradient-light.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    color: #60451d;
+    position: relative;
+
+    .border{
+        background-color: rgba(96, 69, 29, 0.5);
+    }
+}
+.main-questions__right{
+    background: url(../img/gradient-dark.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    color: #fff;
+    position: relative;
+
+    .border{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+.main-questions__text{
+    display: table;
+    margin: 30px auto 0;
+    text-align: center;
+    
+    p{
+        font-size: 13px;
+        text-align: left;
+    }
+    
+    .caption{
+        font-family: 'PT Serif';
+        font-size: 20px;
+        text-align: center;
+    }
+}
+#how-to-get{ 
+	background: url(../img/screen4-bg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 840px;
+	margin: 0 auto; 
+    width: 100%; 
+}
+.how-to-get__block{
+    display: table;
+    margin: auto;
+    color: #60451d;
+    
+    .caption{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 25px;
+        font-family: 'PT Serif';
+        
+        @media (max-width: 767px){
+            font-size: 20px;
+        }
+    }
+    
+    .how-to-get__item{
+        max-width: 386px;
+        margin-top: 40px;
+        
+        @media (max-width: 767px){
+            text-align: center;
+            float: none;
+            margin: 20px auto 0;
+        }
+        
+        img{
+            width: 300px;
+            
+            @media (max-width: 960px){
+                width: 222px;
+            }
+            @media (max-width: 767px){
+                width: 150px;
+            }
+        }
+        p{
+            font-size: 15px;
+            margin-top: 40px;
+            
+            @media (max-width: 767px){
+                margin-top: 20px;
+            }
+            
+            a{
+                font-weight: 700;
+                color: #60451d;
+            }
+        }
+    }
+}
+#photo{
+    background: url(../img/ivory-off-white-paper-texture.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 260px;
+	margin: 0 auto; 
+    width: 100%; 
+}
+.photo__item{
+    width: 25%;
+    height: 250px;
+    position: relative;
+}
+
+.bx-wrapper .bx-viewport{
+    left: 0;
+    border: none;
+}
+
+#price{
+    background: url(../img/gradient-light.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 360px;
+    width: 100%; 
+    padding-top: 1px;
+}
+.price__caption{
+    display: table;
+    margin: 15px auto 0;
+    color: #60451d;
+    width: 75%;
+    h2{
+        font-size: 20px;
+        text-align: center;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-family: 'PT Serif';
+    }
+    h3{
+        margin-top: 25px;
+        font-size: 12px;   
+        font-weight: 400;
+        text-align: center;
+    }
+}
+.price-wrap{
+    display: table;
+    width: 75%;
+    margin: 0 auto;
+    
+    .dropdown-date{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .dropdown-time{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .dropdown-toggle{
+        width: 100%;
+        text-align: left;
+        color: #60451d;
+        border-radius: 1px;
+    }
+    .dropdown-menu{
+        width: 100%;
+        padding: 10px;
+        color: #60451d;
+    }
+    .caret{
+        position: absolute;
+        margin-left: 0;
+        right: 10px;
+        top: 17px;
+    }
+    .caret-top{
+        top: 12px;
+        border-bottom: 4px dashed;
+        border-top: none;
+    }
+    .price-result{
+        margin: 25px 0;
+        color: #60451d;
+        font-size: 11px;
+        font-family: 'PT Serif';
+        span{
+            font-weight: 600;
+        }
+    }
+    .price-enroll{
+        width: 100%;
+        background-color: rgb(96, 69, 29);
+        color: #fff;
+//        box-shadow: none;
+        font-style: italic;
+    }
+}
+#faq{
+    background: url(../img/faq.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1120px;
+	margin: 0; 
+    width: 100%; 
+    padding-top: 1px;
+
+    .border{
+        background-color: rgba(96, 69, 29, 0.5)
+    }
+}
+.faq__caption{
+    display: table;
+    margin: 25px auto 20px;
+    text-transform: uppercase;
+    color: #fff;
+    h2{
+        font-size: 20px;
+        font-family: 'PT Serif';
+        font-weight: 400;
+    }
+}
+.faq__item{
+    background: url(../img/ivory-off-white-paper-texture.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 230px;
+    padding: 2% 8% 0;
+    color: rgb(86, 61, 25);
+    position: relative;
+    
+    .faq__item-caption{
+        
+        h3{
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: 'PT Serif';
+        }
+    }
+    
+    p{
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+
+    margin-bottom: 20px;
+}
+#feedbacks{
+    background: url(../img/gradient-dark.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 520px;
+	margin: 0; 
+    width: 100%; 
+}
+footer{
+    height: 230px;
+    background-color: rgb(59, 59, 59);
+    
+    .footer__left{
+        position: relative;
+        top: 30px;
+        left: 15px;
+        
+        .logo img{
+            width: 100px;
+        }
+        
+    }
+    .footer__right{
+        display: table;
+        position: relative;
+        float: right;
+        top: -50px;
+        right: 15px;
+        color: #fff;
+        width: 200px;
+        
+        .address{
+            text-align: right;
+            font-size: 14px;
+        }
+        
+        .number{
+            text-align: right;
+            font-size: 16px;
+            a{
+                color: #fff;
+                text-decoration: underline;
+            }
+        }
+    }
+    .btn-bottom{
+        width: 90%; 
+        margin: 50px auto 0;
+        
+        .enroll{
+            width: 100%;
+            display: block;
+            padding: 7px 72px;
+        }
+    }
+    
+    .politics{
+        display: table;
+        margin: 15px auto;
+        color: #fff;
+        text-decoration: underline;
+        font-size: 14px;
+    }
+}
