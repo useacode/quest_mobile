@@ -7380,16 +7380,17 @@ body {
   display: block;
   margin: 0 auto 20px;
   width: 40px;
+  height: 40px;
 }
 #second {
   background: url(../img/background2.jpg);
   background-position: 70% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 610px;
   margin: 0 auto;
   width: 100%;
   padding-top: 40px;
+  padding-bottom: 10px;
 }
 .welcome {
   margin: 0;
@@ -7430,6 +7431,7 @@ body {
   display: inline-block;
   margin: 0;
   width: 50px;
+  height: 50px;
 }
 .icon-block p {
   display: table;
@@ -7468,7 +7470,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
   color: #60451d;
   position: relative;
 }
@@ -7480,7 +7481,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
   color: #fff;
   position: relative;
 }
@@ -7506,9 +7506,9 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 840px;
   margin: 0 auto;
   width: 100%;
+  padding-bottom: 10px;
 }
 .how-to-get__block {
   display: table;
@@ -7664,10 +7664,10 @@ body {
   background-position: left top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1120px;
   margin: 0;
   width: 100%;
   padding-top: 1px;
+  padding-bottom: 10px;
 }
 #faq .border {
   background-color: rgba(96, 69, 29, 0.5);
@@ -7688,11 +7688,11 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 230px;
+  min-height: 240px;
+  margin-bottom: 20px;
   padding: 2% 8% 0;
   color: #563d19;
   position: relative;
-  margin-bottom: 20px;
 }
 .faq__item .faq__item-caption h3 {
   font-size: 16px;
