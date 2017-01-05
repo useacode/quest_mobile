@@ -7278,7 +7278,7 @@ body {
 }
 #first {
   position: relative;
-  height: 480px;
+  height: 100vh;
   background: url(../img/main-screen-mobile.jpg);
   background-position: left top;
   -webkit-background-size: cover;
