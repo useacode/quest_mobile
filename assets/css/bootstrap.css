@@ -7929,4 +7929,35 @@ footer .politics {
   margin: 15px 38px;
   text-align: center;
 }
+.success_popup {
+  background: url(../img/ivory-off-white-paper-texture.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  padding: 50px 50px;
+  color: #60451d;
+  z-index: 300;
+}
+.success_popup .button_close {
+  background: url(../img/cancel-brown.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  opacity: 0.5;
+}
+.success_popup .button_close:hover {
+  opacity: 1;
+}
+.success_popup p {
+  font-size: 15px;
+  text-align: center;
+  line-height: 25px;
+}
 /*# sourceMappingURL=bootstrap.css.map */

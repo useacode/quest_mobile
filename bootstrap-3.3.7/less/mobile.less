@@ -717,3 +717,39 @@ footer{
         text-align: center;
     }
 }
+
+.success_popup{
+    background: url(../img/ivory-off-white-paper-texture.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    //display: none;
+    padding: 50px 50px;
+    color: rgb(96, 69, 29);
+    z-index: 300;
+    
+    .button_close{
+        background: url(../img/cancel-brown.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 25px;
+        top: 15px;
+        opacity: 0.5;
+        
+        &:hover{
+            opacity: 1;
+        }
+    }
+      
+    p{
+        font-size: 15px;
+        text-align: center;
+        line-height: 25px;
+    }
+}
