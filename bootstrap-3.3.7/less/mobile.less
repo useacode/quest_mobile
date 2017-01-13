@@ -617,3 +617,95 @@ footer{
     } 
 
 }
+
+.main_popup{
+    background: url(../img/ivory-off-white-paper-texture.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    //display: none;
+    top: 0;  
+    padding: 25px 0 0;
+    color: rgb(96, 69, 29);
+    z-index: 300;
+    font-family: 'PT Sans';
+
+    animation: down 0.5s ease-out; 
+    
+    .main_popup__caption{
+        margin: 0 50px;
+        text-align: center;
+        margin-bottom: 40px;
+        h2{
+            font-size: 18px;
+            font-family: 'PT Serif';
+            letter-spacing: 2px;
+            line-height: 23px;
+        }
+    }
+    
+    .button_close{
+        background: url(../img/cancel-brown.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 25px;
+        top: 15px;
+        opacity: 0.5;
+        
+        &:hover{
+            opacity: 1;
+        }
+    }
+    .border {
+        background-color: rgba(96, 69, 29, 0.5);
+    }
+    
+    input{
+        height: 40px;
+        border: none;
+        text-align: center;
+        
+        &:focus{
+            border-color: rgba(96, 69, 29, 0.5);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(96, 69, 29, 0.6);
+        }
+    }
+    label{
+        font-size: 13px;
+        font-family: 'PT Serif';
+        font-weight: normal;
+        line-height: 19px;
+    }
+    
+    .callme_button{
+        background-color: rgb(96, 69, 29);
+        width: 90%;
+        height: 40px;
+        margin: 20px auto 0;
+        padding-top: 9px;
+        color: #fff;
+        box-sizing: border-box;
+        border-radius: 3px;
+        text-align: center;
+        font-size: 16px;
+        font-style: italic;
+        
+        &:hover{
+            background-color: #fff;
+            color: #000;
+            cursor: pointer;
+        }
+    }
+    
+    h3{
+        font-size: 13px;
+        line-height: 18px;
+        margin: 15px 38px;
+        text-align: center;
+    }
+}
