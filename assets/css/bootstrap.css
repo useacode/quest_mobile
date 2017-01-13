@@ -7763,14 +7763,12 @@ footer {
   height: 230px;
   background-color: #3b3b3b;
 }
-footer .footer__left {
-  position: relative;
-  top: 30px;
-  left: 15px;
-}
 footer .footer__left .logo img {
   width: 100px;
   height: 70px;
+  position: relative;
+  top: 30px;
+  left: 15px;
 }
 footer .footer__right {
   display: table;
@@ -7841,12 +7839,21 @@ footer .politics {
     float: none;
   }
 }
+@keyframes down {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
 .main_popup {
   background: url(../img/ivory-off-white-paper-texture.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
+  display: none;
   top: 0;
   padding: 25px 0 0;
   color: #60451d;

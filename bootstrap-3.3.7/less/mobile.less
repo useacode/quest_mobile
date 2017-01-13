@@ -529,14 +529,13 @@ footer{
     height: 230px;
     background-color: rgb(59, 59, 59);
     
-    .footer__left{
-        position: relative;
-        top: 30px;
-        left: 15px;
-        
+    .footer__left{        
         .logo img{
             width: 100px;
             height: 70px;
+            position: relative;
+            top: 30px;
+            left: 15px;
         }
         
     }
@@ -618,14 +617,23 @@ footer{
 
 }
 
+@keyframes down{
+    from {
+        top: -100%; 
+    }
+    to {
+        top: 0; 
+    }
+}
+
 .main_popup{
     background: url(../img/ivory-off-white-paper-texture.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
-    //display: none;
-    top: 0;  
+    display: none;
+    top: 0;
     padding: 25px 0 0;
     color: rgb(96, 69, 29);
     z-index: 300;
