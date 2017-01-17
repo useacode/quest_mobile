@@ -7372,14 +7372,43 @@ body {
   width: 100%;
 }
 .main-bottom .scroll {
-  display: table;
-  margin: auto;
-}
-.main-bottom .scroll img {
   display: block;
-  margin: 0 auto 20px;
-  width: 40px;
-  height: 40px;
+  margin: auto;
+  text-align: center;
+}
+.main-bottom .scroll span {
+  text-align: center;
+}
+@keyframes mouse-dot {
+  from {
+    color: transparent;
+  }
+  33% {
+    color: #fff;
+  }
+  to {
+    padding-top: 20px;
+    color: transparent;
+  }
+}
+.mouse:before {
+  display: inline-block;
+  content: '\2022';
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 22px;
+  line-height: 1;
+  width: 32px;
+  text-align: center;
+  height: 50px;
+  padding: 0px;
+  background: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-image: initial;
+  border-radius: 30px;
+  animation: mouse-dot 1.5s cubic-bezier(0.23, 1, 0.32, 1) infinite;
 }
 #second {
   background: url(../img/background2.jpg);
@@ -7412,7 +7441,7 @@ body {
   margin: 20px auto;
 }
 .welcome .welcome__text p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5em;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
 }
@@ -7447,6 +7476,12 @@ body {
   text-align: center;
   font-size: 14px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+}
+@media screen and (max-width: 320px) {
+  .icon-block img {
+    width: 40px;
+    height: 40px;
+  }
 }
 #main-questions {
   height: 600px;
@@ -7490,7 +7525,7 @@ body {
 }
 .main-questions__text {
   display: table;
-  margin: 30px auto 0;
+  margin: 30px auto;
   text-align: center;
 }
 .main-questions__text p {
@@ -7606,7 +7641,7 @@ body {
 }
 .price__caption h3 {
   margin-top: 25px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   text-align: center;
 }
@@ -7618,10 +7653,22 @@ body {
 .price-wrap .dropdown-date {
   width: 100%;
   margin-top: 10px;
+  padding: 10px;
+  color: #60451d;
+  border: 0;
+  -webkit-appearance: none;
+  background: white url(../img/select-arrows.svg) right center no-repeat;
+  border-radius: 4px;
 }
 .price-wrap .dropdown-time {
   width: 100%;
   margin-top: 10px;
+  padding: 10px;
+  color: #60451d;
+  border: 0;
+  -webkit-appearance: none;
+  background: white url(../img/select-arrows.svg) right center no-repeat;
+  border-radius: 4px;
 }
 .price-wrap .dropdown-toggle {
   width: 100%;
@@ -7706,7 +7753,7 @@ body {
   line-height: 1.5em;
 }
 #feedbacks {
-  background: url(../img/gradient-dark.jpg);
+  background: url(../img/gradient-dark.png);
   background-position: left top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7807,20 +7854,26 @@ footer .politics {
 }
 @keyframes to-left {
   from {
-    left: 100%;
+    right: -100%;
   }
   to {
-    left: 10%;
+    right: 0;
   }
 }
 @media screen and (max-width: 767px) {
+  .navbar-nav {
+    margin: 0;
+  }
+  .navbar-collapse {
+    padding: 0;
+  }
   .navbar-collapse.in,
   .navbar-collapse.collapsing {
     overflow-x: hidden;
     overflow-y: hidden;
     position: fixed;
-    left: 10%;
-    width: 90%;
+    right: 0;
+    width: 220px;
     top: 60px;
     z-index: 100;
     animation: to-left 0.25s linear;
@@ -7936,6 +7989,9 @@ footer .politics {
   background-size: cover;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  display: none;
   padding: 50px 50px;
   color: #60451d;
   z-index: 300;
@@ -7959,5 +8015,9 @@ footer .politics {
   font-size: 15px;
   text-align: center;
   line-height: 25px;
+}
+.error {
+  font-size: 13px;
+  color: red;
 }
 /*# sourceMappingURL=bootstrap.css.map */
